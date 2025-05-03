@@ -195,6 +195,6 @@ if __name__ == "__main__":
     mape_list = np.array(mape_list)
     corr_list = np.array(corr_list)
 
-    print('test|\MAE-mean\RMSE-mean\MAPE-mean\MAE-std\RMSE-std\MAPE-std')
+    print('test|\MAE-mean\RMSE-mean\MAPE-mean\CORR-mean\MAE-std\RMSE-std\MAPE-std\CORR-std')
     log = '{:d}\t{:.4f}\t{:.4f}\t{:.4f}\t{:.4f}\t{:.4f}\t{:.4f}\t{:.4f}\t{:.4f}'
     print(log.format(i+1, mae_list.mean(), rmse_list.mean(), mape_list.mean(), corr_list.mean(), mae_list.std(), rmse_list.std(), mape_list.std(), corr_list.std()))
