@@ -184,6 +184,7 @@ if __name__ == "__main__":
     mape_list = []
     corr_list = []
     for i in range(args.runs):
+        print('start run', i+1)
         mae, rmse, mape, corr = train(args, test_period_point, chla_original, variables, loc, adj, dataloader, scaler)
         mae_list.append(mae)
         rmse_list.append(rmse)
