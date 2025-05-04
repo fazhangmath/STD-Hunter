@@ -31,7 +31,7 @@ parser.add_argument('--runs',type=int,default=10,help='number of runs')
 args = parser.parse_known_args()[0]
 
 
-def train(args, test_period_point, chla_original, variables, loc, adj, dataloader, scaler):
+def train(args, test_period_point, chla_original, loc, adj, dataloader, scaler):
     device = torch.device(args.device)
     model = STD_Hunter(args.num_nodes, device, adj=adj, dropout=args.dropout,
                   channels=args.channels, seq_length=args.input_len, 
@@ -179,7 +179,7 @@ if __name__ == "__main__":
     corr_list = []
     for i in range(args.runs):
         print('start run', i+1)
-        mae, rmse, mape, corr = train(args, test_period_point, chla_original, variables, loc, adj, dataloader, scaler)
+        mae, rmse, mape, corr = train(args, test_period_point, chla_original, loc, adj, dataloader, scaler)
         mae_list.append(mae)
         rmse_list.append(rmse)
         mape_list.append(mape)
