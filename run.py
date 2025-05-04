@@ -16,7 +16,6 @@ parser.add_argument('--dropout',type=float,default=0.5,help='dropout rate')
 parser.add_argument('--input_len',type=int,default=12,help='input sequence length')
 parser.add_argument('--out_len',type=int,default=1,help='output sequence length')
 parser.add_argument('--pred_len',type=int,default=12,help='prediction horizon')
-parser.add_argument('--in_dim',type=int,default=4,help='inputs dimension')
 parser.add_argument('--rank',type=int,default=4,help='rank')
 parser.add_argument('--channels',type=int,default=16,help='channels')
 
@@ -170,6 +169,7 @@ if __name__ == "__main__":
     loc, adj, dataloader, scaler = generate_data(variables, L1, L2, test_period_point, val_period_len)
         
     parser.add_argument('--num_nodes',type=int,default=len(loc),help='number of nodes/variables')
+    parser.add_argument('--in_dim',type=int,default=2*len(variables),help='inputs dimension')
     args = parser.parse_known_args()[0]
         
     device = torch.device(args.device)
