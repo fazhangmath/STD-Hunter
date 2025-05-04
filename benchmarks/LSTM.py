@@ -21,7 +21,7 @@ class LSTMModel(nn.Module):
         return out
 
 
-def train(chla_original, variables, loc, device):    
+def train(chla_original, variables, L1, L2, loc, device):    
     X = torch.Tensor(variables[:, :, loc[:,0], loc[:,1]]).transpose(0,2).unfold(1, 2*L1, 1)
     X = X.reshape(X.shape[0], X.shape[1], X.shape[2]*X.shape[3])
     X_train = X[:, 1:test_period_point-2*L1-L2+1-val_period_len]
@@ -105,7 +105,7 @@ if __name__ == "__main__":
     corr_list = []
     for i in range(runs):
         print('start run', i+1)
-        mae, rmse, mape, corr = train(chla_original, variables, loc, device)
+        mae, rmse, mape, corr = train(chla_original, variables, L1, L2, loc, device)
         mae_list.append(mae)
         rmse_list.append(rmse)
         mape_list.append(mape)
