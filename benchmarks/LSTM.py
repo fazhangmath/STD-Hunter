@@ -80,7 +80,7 @@ def train(chla_original, variables, loc, device):
         mape.append(np.mean(np.abs(error)/real))
         corr.append(np.corrcoef(real, pred)[0][1])
         
-    return mae, rmse, mape, corr
+    return np.mean(mae), np.mean(rmse), np.mean(mape), np.mean(corr)
     
     
 if __name__ == "__main__":
