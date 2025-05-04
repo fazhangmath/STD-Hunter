@@ -118,17 +118,11 @@ def train(args, test_period_point, chla_original, variables, loc, adj, dataloade
     yhat = torch.cat(outputs, dim=0)
     yhat = yhat[:realy.size(0), ...]
 
-    mae = []
-    mape = []
-    rmse = []
     pred = yhat*scaler[1]+scaler[0]
     real = realy[:, :, 0]
     metrics = metric(pred, real)
     log = 'Evaluate best model on test data for horizon {:d}, Test MAE: {:.4f}, Test MAPE: {:.4f}, Test RMSE: {:.4f}'
     print(log.format(1, metrics[0], metrics[1], metrics[2]))
-    mae.append(metrics[0])
-    mape.append(metrics[1])
-    rmse.append(metrics[2])
 
     pred_temp = torch.zeros(pred.shape)
     for i in range(12):
