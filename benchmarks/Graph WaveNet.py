@@ -33,7 +33,7 @@ parser.add_argument('--learning_rate',type=float,default=0.01,help='learning rat
 parser.add_argument('--dropout',type=float,default=0.3,help='dropout rate')
 parser.add_argument('--weight_decay',type=float,default=0.00001,help='weight decay rate')
 parser.add_argument('--epochs',type=int,default=200,help='')
-parser.add_argument('--save',type=str,default='./save',help='save path')
+parser.add_argument('--save',type=str,default='./save_Graph_WaveNet',help='save path')
 parser.add_argument('--runs',type=int,default=10,help='number of runs')
 
 args = parser.parse_known_args()[0]
