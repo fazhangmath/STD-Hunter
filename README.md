@@ -3,7 +3,7 @@ In this paper, we present STD-Hunter to facilitate long-term, large scale chloro
 ![](https://github.com/fazhangmath/STD-Hunter/blob/main/Framework.png)
 
 ## Data
-The data is publicly available in MODIS projects. We also provide the used data in [MODIS data](https://hkustconnect-my.sharepoint.com/:f:/g/personal/fzhangat_connect_ust_hk/EsembQtGI_5HlT6MeA2n89wBvqHtvkwkg7TlBJw-An9rmw?e=6S7VTM).
+The chlorophyll-a (Chl_a) concentration and sea surface temperature (SST) data is publicly available in [MODIS Aqua projects](https://search.earthdata.nasa.gov/search?q=10.5067/AQUA/MODIS/L3M). We also provide the used data in [MODIS data](https://hkustconnect-my.sharepoint.com/:f:/g/personal/fzhangat_connect_ust_hk/EsembQtGI_5HlT6MeA2n89wBvqHtvkwkg7TlBJw-An9rmw?e=6S7VTM).
 
 ## Reference
 If you find the ```STD-Hunter``` package or any of the source code in this repository useful for your work, please cite:
