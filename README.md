@@ -7,8 +7,10 @@ The data is publicly available in MODIS projects. We also provide the used data 
 
 # Reference
 If you find the ```STD-Hunter``` package or any of the source code in this repository useful for your work, please cite:
-> ```Taming the heterogeneous dynamics in ocean chlorophyll-a concentration prediction with a deep learning model.
-Fa Zhang, Hiusuet Kung, Fan Zhang, Zhiwei Wang, Can Yang#, and Jianping Gan#. 2025.> ```
+> ```
+> Taming the heterogeneous dynamics in ocean chlorophyll-a concentration prediction with a deep learning model.
+Fa Zhang, Hiusuet Kung, Fan Zhang, Zhiwei Wang, Can Yang#, and Jianping Gan#. 2025.
+> ```
 
 # Development
 The python repository ```STD-Hunter``` is developed and maintained by Fa Zhang.
