@@ -6,4 +6,8 @@ The data is publicly available in MODIS projects. We also provide the used data 
 
 # Reference
 
+# Development
+The python repository STD-Hunter is developed and maintained by [Fa Zhang](fa.zhang@connect.ust.hk).
+
 # Contact
+Please feel free to contact Fa Zhang (fa.zhang@connect.ust.hk), Prof. Can Yang (macyang@ust.hk), or Prof. Jianping Gan (magan@ust.hk) if any inquiries.
