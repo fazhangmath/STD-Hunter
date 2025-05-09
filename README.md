@@ -1,5 +1,5 @@
 # Taming the heterogeneous dynamics in ocean chlorophyll-a concentration prediction with a deep learning model
-In this paper, we present STD-Hunter to facilitate long-term, large scale chlorophyll-a concentration prediction. The core innovation is that STD-Hunter forms a predictive model for each task by integrating commonly shared basis models with the specific spatiotemporal characteristics of Chl_a.  STD-Hunter strikes an optimal balance between effectively leveraging data and preserving idiosyncratic dynamics, offering a interpretable tool with for heterogeneous data exploration.
+This repository implements STD-Hunter method, a novel machine learning approach designed to facilitate long-term, large-scale prediction of chlorophyll-a (Chl_a) concentration. The core innovation is that STD-Hunter forms a predictive model for each task by integrating commonly shared basis models with the specific spatiotemporal characteristics of Chl_a.  STD-Hunter strikes an optimal balance between effectively leveraging data and preserving idiosyncratic dynamics with an interpretable mechanism, offering a trustworthy tool for heterogeneous data exploration.
 ![](https://github.com/fazhangmath/STD-Hunter/blob/main/Framework.png)
 
 ## Data
